@@ -40,9 +40,11 @@ for (let i = 0; i < teamMembers.length; i++) {
     console.log(member.nameMember, member.role, member.photo);
 }
 
-listMembers.innerHTML = "";
+
 //stampo nel dom ogni oggetto con le relative proprietà
 for (let i = 0; i < teamMembers.length; i++) {
+    let itemEl = document.createElement("li");
     let objMember = teamMembers[i];
-    listMembers.innerHTML += `<li>${objMember.nameMember} -- ${objMember.role} -- ${objMember.photo}</li>`;
+    itemEl.innerHTML += `<div>${objMember.nameMember} -- ${objMember.role}</div> <img src="images/${objMember.photo}">`;
+    listMembers.append(itemEl);
 }

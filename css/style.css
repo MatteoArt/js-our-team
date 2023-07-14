@@ -8,7 +8,7 @@ body {
 }
 .container {
     padding: 25px;
-    width: 800px;
+    width: 650px;
 }
 #lista-membri {
     list-style-type: none;
@@ -17,4 +17,10 @@ body {
     padding: 5px;
     border: 1px solid black;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+#lista-membri img {
+    width: 20%;
 }
