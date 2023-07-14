@@ -1,4 +1,4 @@
-
+const listMembers = document.getElementById("lista-membri");
 
 //creo l'array di oggetti
 let teamMembers = [
@@ -38,4 +38,11 @@ let teamMembers = [
 for (let i = 0; i < teamMembers.length; i++) {
     let member = teamMembers[i];
     console.log(member.nameMember, member.role, member.photo);
+}
+
+listMembers.innerHTML = "";
+//stampo nel dom ogni oggetto con le relative proprietà
+for (let i = 0; i < teamMembers.length; i++) {
+    let objMember = teamMembers[i];
+    listMembers.innerHTML += `<li>${objMember.nameMember} -- ${objMember.role} -- ${objMember.photo}</li>`;
 }
