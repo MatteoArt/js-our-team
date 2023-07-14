@@ -3,3 +3,18 @@
     margin: 0;
     padding: 0;
 }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    padding: 25px;
+    width: 800px;
+}
+#lista-membri {
+    list-style-type: none;
+}
+#lista-membri li {
+    padding: 5px;
+    border: 1px solid black;
+    font-weight: 600;
+}
