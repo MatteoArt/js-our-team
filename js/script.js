@@ -33,3 +33,9 @@ let teamMembers = [
         photo : "barbara-ramos-graphic-designer.jpg"
     }
 ];
+
+//stampo in console per ogni oggetto i valori delle relative proprietà
+for (let i = 0; i < teamMembers.length; i++) {
+    let member = teamMembers[i];
+    console.log(member.nameMember, member.role, member.photo);
+}
