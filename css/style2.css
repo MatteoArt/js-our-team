@@ -31,3 +31,15 @@ body {
     margin-top: 5px;
     font-weight: 600;
 }
+.title {
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: rgb(66, 63, 63);
+}
+.par {
+    text-align: center;
+    width: 50%;
+    margin: 10px auto;
+    color: rgb(66, 63, 63);
+}
